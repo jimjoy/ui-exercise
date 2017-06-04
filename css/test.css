@@ -19,9 +19,33 @@ body {
     margin: 0;
 }
 
+
+/* Headings */
+
 h1, h2, h3 {
     font-family: "Merriweather", Georgia, serif;
     font-weight: 300;
+}
+@media(max-width: 1023px) {
+    h1 {
+        font-size: 1.4em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #666;
+    transition: all 0.2s ease;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 /* Logo */
@@ -30,13 +54,35 @@ h1, h2, h3 {
     max-width: 10em;
     margin: 1em;
 }
+
+
+/* Header */
+
 .header {
+    display: flex;
     margin-bottom: 2em;
+    background: #fff;
+    background-color: gainsboro;
+    border-bottom: 1px solid #bfbfbf;
+}
+.header > *:last-child {
+    margin-left: auto;
+}
+
+
+/* Footer */
+
+.footer {
+    padding: 1em;
+    text-align: center;
+    font-size: .75em;
+    background-color: gainsboro;
+    border-top: 1px solid #bfbfbf;
 }
 
 /* Navigation */
 .nav-main {
-    background: gainsboro;
+    background-color: #fff;
 }
 .nav-main ol {
     list-style: none;
@@ -46,17 +92,22 @@ h1, h2, h3 {
 .nav-main li {
     display: inline-block;
 }
+.nav-main li:not(:last-child) {
+    border-right: 1px solid #bfbfbf;
+}
 .nav-main a {
     text-decoration: none;
     display: block;
-    padding: 1em;
+    padding: 1em 1.2em;
     color: #555;
 }
-.nav-main a:hover {
+.nav-main a:hover,
+.nav-main .is-active {
     color: #000;
     background-color: #000;
     color: #fff;
 }
+
 
 
 /* Content */
@@ -98,6 +149,7 @@ h1, h2, h3 {
 .grid > * {
     width: 100%;
     float: left;
+    display: flex;
 }
 
 .grid-gutter {
@@ -134,11 +186,31 @@ h1, h2, h3 {
 
 .card {
     display: flex;
+    width: 100%;
     flex-direction: column;
+    color: #666;
+    background-color: #fff;
 }
-.card__header {
-    
+.card:hover {
+    text-decoration: none;
+    background-color: #efefef;
+}
+.card__header,
+.card__body {
+    padding: 0 1em;
+}
+.card__header > * {
+    margin-bottom: 0;
 }
 .card__body > * {
+    margin-top: 0;
+}
+.card img {
+    margin: 0 auto;
+}
+@media (max-width: 24em) {
+    .card {
+        text-align: center;
+    }
     
 }
