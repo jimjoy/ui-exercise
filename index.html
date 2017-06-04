@@ -7,14 +7,18 @@
     <meta name="description" content="Valtech UI Excercise">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/test.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:300,300i">
 </head>
 <body>
     
-    <header>
+    <header role="banner" class="header">
         <div>
-            Header
+            <a href="/" class="logo">
+                <img src="https://camo.githubusercontent.com/de9c61e928eb849693cd75c7c58e713ab7a42232/687474703a2f2f692e696d6775722e636f6d2f33324f69706c342e706e67" width="489" height="100" class="u-img-responsive" />
+                <span class="u-visually-hidden">Valtech</span>
+            </a>
         </div>
-        <nav class="nav-main">
+        <nav class="nav-main" role="navigation">
             <ol>
                 <li><a href="/" title="Home">Home</a></li>
                 <li><a href="/about" title="About">About</a></li>
@@ -23,16 +27,92 @@
         </nav>
     </header>
     
-    <main class="content">
+    <main class="content" role="main">
         <div class="content__main">
-            Main Content
+            
+            <div class="grid g-gutter">
+                
+                <div class="g-col-xs-6 g-col-sm-4">
+                    <article class="card">
+                        <img src="img/vlisco.jpg" width="265" height="145" class="u-img-responsive" />
+                        <header class="card__header">
+                            <h3>Vlisco</h3>
+                        </header>
+                        <div class="card__body">
+                            <p>E-commerce with a colorful story</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="g-col-xs-6 g-col-sm-4">
+                    <article class="card">
+                        <img src="img/copenhagen-airports.jpg" width="265" height="145" class="u-img-responsive" />
+                        <header class="card__header">
+                            <h3>Copenhagen Airports</h3>
+                        </header>
+                        <div class="card__body">
+                            <p>Knowing Your Customer in the Digital Age</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="g-col-xs-6 g-col-sm-4">
+                    <article class="card">
+                        <img src="img/tv4play.jpg" width="265" height="145" class="u-img-responsive" />
+                        <header class="card__header">
+                            <h3>TV4 Play</h3>
+                        </header>
+                        <div class="card__body">
+                            <p>From TV channel to leading content provider</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="g-col-xs-6 g-col-sm-4">
+                    <article class="card">
+                        <img src="img/audi-city.jpg" width="265" height="145"class="u-img-responsive"  />
+                        <header class="card__header">
+                            <h3>Audi City</h3>
+                        </header>
+                        <div class="card__body">
+                            <p>How to purchase a real car in a virtual store</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="g-col-xs-6 g-col-sm-4">
+                    <article class="card">
+                        <img src="img/arla-foods.jpg" width="265" height="145" class="u-img-responsive" />
+                        <header class="card__header">
+                            <h3>Arla Foods</h3>
+                        </header>
+                        <div class="card__body">
+                            <p>Dairy production in Big Data</p>
+                        </div>
+                    </article>
+                </div>
+                
+                <div class="g-col-xs-6 g-col-sm-4">
+                    <article class="card">
+                        <img src="img/vlisco.jpg" width="265" height="145" class="u-img-responsive" />
+                        <header class="card__header">
+                            <h3>Xylem</h3>
+                        </header>
+                        <div class="card__body">
+                            <p>Helping the World's largest water technology provider solve the global water crisis through Business Transformation.</p>
+                        </div>
+                    </article>
+                </div>
+                
+            </div>
+            
         </div>
-        <aside class="content__sidebar">
+        <aside role="complementary" class="content__sidebar">
             Sidebar
         </aside>
     </main>
     
-    <footer>
+    <footer role="contentinfo">
         Footer
     </footer>
 
