@@ -1,0 +1,52 @@
+/*
+* Valtech UI Excercise
+* June 2017
+*/
+
+
+/* Base Setup */
+*, input, button {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Navigation */
+.nav-main {
+    background: gainsboro;
+}
+.nav-main ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-main li {
+    display: inline-block;
+}
+.nav-main a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+}
+.nav-main a:hover {
+    text-decoration: underline;
+}
+
+
+/* Content */
+@media(min-width: 750px) {
+    .content {
+        display: flex;
+    }
+    .content__main {
+        float: left;
+        width: 70%;
+    }
+    .content__sidebar {
+        float: right;
+        width: 30%;
+    }
+}
