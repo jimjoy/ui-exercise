@@ -8,128 +8,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/test.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:300,300i">
+    <link  rel="icon" type="image/x-icon" href="img/favicon.ico" />
 </head>
 <body>
     
-    <header role="banner" class="header">
-        <a href="/" class="logo">
-            <img src="https://camo.githubusercontent.com/de9c61e928eb849693cd75c7c58e713ab7a42232/687474703a2f2f692e696d6775722e636f6d2f33324f69706c342e706e67" width="115" height="24" class="u-img-responsive" alt="Valtech">
-            <span class="u-visually-hidden">Valtech</span>
-        </a>
-        <nav class="nav-main" role="navigation">
-            <ol>
-                <li><a href="/" title="Home" class="is-active">Home</a></li><li><a href="/about" title="About">About</a></li><li><a href="/blog" title="Blog">Blog</a></li>
-            </ol>
-        </nav>
-    </header>
+    <div class="wrapper">
+        <header role="banner" class="header">
+            <a href="/" class="logo">
+                <img src="https://camo.githubusercontent.com/de9c61e928eb849693cd75c7c58e713ab7a42232/687474703a2f2f692e696d6775722e636f6d2f33324f69706c342e706e67" width="115" height="24" class="u-img-responsive" alt="Valtech">
+                <span class="u-visually-hidden">Valtech</span>
+            </a>
+            <nav class="nav-main" role="navigation">
+                <ol>
+                    <li><a href="/" title="Home" class="is-active">Home</a></li><li><a href="/about" title="About">About</a></li><li><a href="/blog" title="Blog">Blog</a></li><li><a href="#sidebar" title="Sidebar Toggle" class="js-toggle-sidebar" role="tab" aria-controls="#sidebar" tabindex="0">Sidebar</a></li>
+                </ol>
+            </nav>
+        </header>
     
-    <main class="content" role="main">
-        <div class="content__main">
+        <main class="content" role="main">
+            <div class="content__main">
             
-            <div class="grid g-gutter">
+                <div class="grid g-gutter">
                 
-                <div class="g-col-xs-6 g-col-sm-4">
-                    <a href="#" class="card">
-                        <picture>
-                            <source media="(min-width: 78em)" srcset="img/365x200.png" />
-                            <img src="img/vlisco.jpg" class="u-img-responsive" />
-                        </picture>
+                    <div class="g-col-xs-6 g-col-sm-4">
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(min-width: 78em)" srcset="img/365x200.png" />
+                                <img src="img/vlisco.jpg" class="u-img-responsive" />
+                            </picture>
                         
-                        <header class="card__header">
-                            <h2>Vlisco</h2>
-                        </header>
-                        <div class="card__body">
-                            <p>E-commerce with a colorful story</p>
-                        </div>
-                    </a>
-                </div>
+                            <header class="card__header">
+                                <h2>Vlisco</h2>
+                            </header>
+                            <div class="card__body">
+                                <p>E-commerce with a colorful story</p>
+                            </div>
+                        </a>
+                    </div>
                 
-                <div class="g-col-xs-6 g-col-sm-4">
-                    <a href="#" class="card">
-                        <picture>
-                            <source media="(min-width: 78em)" srcset="img/365x200.png" />
-                            <img src="img/copenhagen-airports.jpg" class="u-img-responsive" />
-                        </picture>
-                        <header class="card__header">
-                            <h2>Copenhagen Airports</h2>
-                        </header>
-                        <div class="card__body">
-                            <p>Knowing Your Customer in the Digital Age</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="g-col-xs-6 g-col-sm-4">
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(min-width: 78em)" srcset="img/365x200.png" />
+                                <img src="img/copenhagen-airports.jpg" class="u-img-responsive" />
+                            </picture>
+                            <header class="card__header">
+                                <h2>Copenhagen Airports</h2>
+                            </header>
+                            <div class="card__body">
+                                <p>Knowing Your Customer in the Digital Age</p>
+                            </div>
+                        </a>
+                    </div>
                 
-                <div class="g-col-xs-6 g-col-sm-4">
-                    <a href="#" class="card">
-                        <picture>
-                            <source media="(min-width: 78em)" srcset="img/365x200.png" />
-                            <img src="img/tv4play.jpg" class="u-img-responsive" />
-                        </picture>
-                        <header class="card__header">
-                            <h2>TV4 Play</h2>
-                        </header>
-                        <div class="card__body">
-                            <p>From TV channel to leading content provider</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="g-col-xs-6 g-col-sm-4">
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(min-width: 78em)" srcset="img/365x200.png" />
+                                <img src="img/tv4play.jpg" class="u-img-responsive" />
+                            </picture>
+                            <header class="card__header">
+                                <h2>TV4 Play</h2>
+                            </header>
+                            <div class="card__body">
+                                <p>From TV channel to leading content provider</p>
+                            </div>
+                        </a>
+                    </div>
                 
-                <div class="g-col-xs-6 g-col-sm-4">
-                    <a href="#" class="card">
-                        <picture>
-                            <source media="(min-width: 78em)" srcset="img/365x200.png" />
-                            <img src="img/audi-city.jpg" class="u-img-responsive" />
-                        </picture>
-                        <header class="card__header">
-                            <h2>Audi City</h2>
-                        </header>
-                        <div class="card__body">
-                            <p>How to purchase a real car in a virtual store</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="g-col-xs-6 g-col-sm-4">
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(min-width: 78em)" srcset="img/365x200.png" />
+                                <img src="img/audi-city.jpg" class="u-img-responsive" />
+                            </picture>
+                            <header class="card__header">
+                                <h2>Audi City</h2>
+                            </header>
+                            <div class="card__body">
+                                <p>How to purchase a real car in a virtual store</p>
+                            </div>
+                        </a>
+                    </div>
                 
-                <div class="g-col-xs-6 g-col-sm-4">
-                    <a href="#" class="card">
-                        <picture>
-                            <source media="(min-width: 78em)" srcset="img/365x200.png" />
-                            <img src="img/arla-foods.jpg" class="u-img-responsive" />
-                        </picture>
-                        <header class="card__header">
-                            <h2>Arla Foods</h2>
-                        </header>
-                        <div class="card__body">
-                            <p>Dairy production in Big Data</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="g-col-xs-6 g-col-sm-4">
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(min-width: 78em)" srcset="img/365x200.png" />
+                                <img src="img/arla-foods.jpg" class="u-img-responsive" />
+                            </picture>
+                            <header class="card__header">
+                                <h2>Arla Foods</h2>
+                            </header>
+                            <div class="card__body">
+                                <p>Dairy production in Big Data</p>
+                            </div>
+                        </a>
+                    </div>
                 
-                <div class="g-col-xs-6 g-col-sm-4">
-                    <a href="#" class="card">
-                        <picture>
-                            <source media="(min-width: 78em)" srcset="img/365x200.png" />
-                            <img src="img/xylem.jpg" class="u-img-responsive" />
-                        </picture>
-                        <header class="card__header">
-                            <h2>Xylem</h2>
-                        </header>
-                        <div class="card__body">
-                            <p>Helping the World's largest water technology provider solve the global water crisis through Business Transformation.</p>
-                        </div>
-                    </a>
-                </div>
+                    <div class="g-col-xs-6 g-col-sm-4">
+                        <a href="#" class="card">
+                            <picture>
+                                <source media="(min-width: 78em)" srcset="img/365x200.png" />
+                                <img src="img/xylem.jpg" class="u-img-responsive" />
+                            </picture>
+                            <header class="card__header">
+                                <h2>Xylem</h2>
+                            </header>
+                            <div class="card__body">
+                                <p>Helping the World's largest water technology provider solve the global water crisis through Business Transformation.</p>
+                            </div>
+                        </a>
+                    </div>
                 
-            </div>
+                </div>
             
-        </div>
-        <aside role="complementary" class="content__sidebar">
-            Sidebar 😊
-        </aside>
-    </main>
+            </div>
+            <aside id="sidebar" role="complementary" class="content__sidebar">
+                <div class="content__sidebar-body">
+                    Sidebar 😊
+                </div>
+            </aside>
+        </main>
     
-    <footer role="contentinfo" class="footer">
-        <p><a href="//garethjoyce.co.uk">@jimjoy 2017</a></p>
-    </footer>
+        <footer role="contentinfo" class="footer">
+            <p><a href="//garethjoyce.co.uk">@jimjoy 2017</a></p>
+        </footer>
+    </div>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>

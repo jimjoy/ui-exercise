@@ -77,7 +77,6 @@ a:hover {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-bottom: 2em;
     background: #fff;
     border-bottom: 1px solid #bfbfbf;
 }
@@ -91,7 +90,6 @@ a:hover {
 
 .footer {
     clear: both;
-    margin-top: 2em;
     padding: 1em;
     text-align: center;
     font-size: .75em;
@@ -99,7 +97,9 @@ a:hover {
     border-top: 1px solid #bfbfbf;
 }
 
+
 /* Navigation */
+
 .nav-main {
     background-color: #fff;
 }
@@ -128,8 +128,16 @@ a:hover {
     color: #000;
     border-bottom-color: #000;
 }
+.nav-main a:focus {
+    outline: none;
+    color: #fff;
+    background-color: #000;
+}
 
-@media(max-width: 24em) {
+
+/* Header Tweaks for small screens */
+
+@media(max-width: 28em) {
     .logo {
         max-width: 5em;
         margin: .6em;
@@ -148,8 +156,16 @@ a:hover {
 }
 
 
-
 /* Content */
+
+.content__main {
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.content__sidebar {
+    transition: all .3s ease;
+}
+
 @media(min-width: 750px) {
     .content {
         display: -webkit-box;
@@ -160,6 +176,7 @@ a:hover {
     .content__main {
         float: left;
         width: 70%;
+        padding-right: 1em;
     }
     .content__sidebar {
         float: right;
@@ -168,11 +185,76 @@ a:hover {
 }
 
 
+/* Content for smaller screens */
+
+@media(max-width: 749px) {
+    .wrapper {
+        left: 0;
+        position: relative;
+        width: 100%;
+    }
+    .content__sidebar {
+        position: fixed;
+        z-index: 20;
+        width: 80%;
+        right: -80%;
+        top: 0;
+        height: 100%;
+        background-color: #fff;
+    }
+    .sidebar-active .wrapper {
+        height: 100%;
+        overflow: hidden;
+        transition: left .3s ease;
+        height: 100%;
+        left: -80%;
+    }
+    .sidebar-active .content__sidebar {
+        right: 0;
+        box-shadow: 0 0 1em 0 rgba(0,0,0,0.3);
+    }
+    .sidebar-active .js-toggle-sidebar::after {
+        background: rgba(0,0,0,0.3);
+        content: '';
+        display: block;
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        z-index: 10;
+    }
+}
+
+
+/* Content for larger screens */
+
+@media(min-width: 750px) {
+    .content__sidebar {
+        overflow: hidden;
+        max-height: 0;
+        background-color: #efefef;
+        border-left: 1px solid #bfbfbf;
+    }
+    .sidebar-active .content__sidebar {
+        max-height: 70em;
+    }
+    .content__sidebar-body {
+        padding: 1em;
+    }
+}
+
+
+/* Utility - responsive images */
+
 .u-img-responsive {
     display: block;
     max-width: 100%;
     height: auto;
 }
+
+
+/* Utility - hide text for screen readers */
 
 .u-visually-hidden {
     position: absolute;
@@ -183,6 +265,9 @@ a:hover {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
 }
+
+
+/* Utility - grid */
 
 .grid {
     display: -webkit-box;
@@ -202,16 +287,14 @@ a:hover {
     display: -ms-flexbox;
     display: flex;
 }
-
-.grid-gutter {
-    
-}
 .g-gutter > * {
     padding-left: 1%;
     padding-right: 1%;
     margin-bottom: 1em;
 }
 
+
+/* Utility - grid cols, only add what I need */
 
 .g-col-xs-6 {
     width: 50%;
@@ -233,7 +316,7 @@ a:hover {
 }
 
 
-
+/* Cards */
 
 .card {
     display: -webkit-box;
@@ -266,5 +349,4 @@ a:hover {
     .card {
         text-align: center;
     }
-    
 }
